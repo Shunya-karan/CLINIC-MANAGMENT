@@ -693,8 +693,8 @@ def send_payment_reminder_email(patient_data, qr_image_path):
         # Email configuration - UPDATE THESE WITH YOUR ACTUAL EMAIL SETTINGS
         smtp_server = "smtp.gmail.com"  # Change to your email provider
         smtp_port = 587
-        sender_email = "akashgowda0412@gmail.com"  # Change to your email
-        sender_password = "wpri zbpg pnsf qebc"  # Change to your app password
+        sender_email = ""  # Change to your email
+        sender_password = ""  # Change to your app password
         
         # Patient details
         patient_name = patient_data['patient_name']
@@ -1701,5 +1701,6 @@ addcharges = ctk.CTkButton(main_frame, text="💲Additional Charges",
                           command=additional_charges
                           )
 addcharges.place(x=screen_width//2 - 370, y=screen_height - 150)
+
 
 paymentwindow.mainloop()
