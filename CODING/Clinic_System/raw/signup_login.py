@@ -33,8 +33,8 @@ hbc = "#1A2750"
 # EMAIL CONFIGURATION
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_ADDRESS = "karanyad9072@gmail.com"  # Replace with your email
-EMAIL_PASSWORD = "lwwx vdgp smbf eeks"    # Replace with your app password
+EMAIL_ADDRESS = ""  # Replace with your email
+EMAIL_PASSWORD = ""    # Replace with your app password
 
 # Store OTPs temporarily
 otp_storage = {}
@@ -772,4 +772,5 @@ styleline.place(x=50, y=470)
 Doctor_button = ctk.CTkButton(right_patient_frame, text="Doctor Portal", font=("Arial",16), fg_color= dbc, #136B0B,226622
                               hover_color=hbc, width=150, height=25, corner_radius=0, border_color="#154360" ,command=lambda:show_frames(DR_signup_frame))
 Doctor_button.place(x=180, y=510)
+
 root.mainloop()
