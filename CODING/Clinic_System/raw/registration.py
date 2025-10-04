@@ -21,8 +21,8 @@ def generate_secure_password(length=8):
 def send_credentials_email(to_email, username, password):
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    sender_email = "karanyad9072@gmail.com"
-    sender_password = "lwwx vdgp smbf eeks"
+    sender_email = ""
+    sender_password = ""
 
     subject = "Your Patient Portal Credentials"
     body = f"""
@@ -411,4 +411,5 @@ def sign_in():
 
 # Start the app
 if __name__ == "__main__":
+
     create_registration_form()
