@@ -57,7 +57,7 @@ ctk.CTkLabel(app, text="CliniCloud", font=("Times New Roman", 50, "bold"), text_
 ctk.CTkLabel(app, text="Welcome !!", font=heading_font, text_color="white", bg_color=dbc).place(x=40, y=120)
 
 def open_clinic_bot():
-    API_KEY = "Bearer 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"  # Add your key here
+    API_KEY = ""  # Add your key here
     MODEL = "deepseek/deepseek-r1:free"
     REFERER = "http://localhost"
     TITLE = "ClinicBot"
@@ -2179,5 +2179,6 @@ update_button = ctk.CTkButton(
     command=lambda: open_update_window(value)
 )
 update_button.place(x=900, y=700)
+
 
 app.mainloop()
